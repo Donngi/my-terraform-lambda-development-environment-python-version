@@ -1,0 +1,17 @@
+{
+    "python.autoComplete.extraPaths": [
+        "./terraform/module/lambda/src",
+    ],
+    "python.analysis.extraPaths": [
+        "./terraform/module/lambda/src",
+    ],
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.flake8Enabled": false,
+    "python.formatting.provider": "black",
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+}
