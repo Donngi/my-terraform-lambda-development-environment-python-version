@@ -6,7 +6,7 @@ import abc
 # In addition, all usecases have abstract class to realize DIP.
 
 
-class SomeUsecase(metaclass=abc.ABCMeta):
+class SomeUseCase(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def run(self):
         pass

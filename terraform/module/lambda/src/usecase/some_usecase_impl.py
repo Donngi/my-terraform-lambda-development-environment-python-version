@@ -4,7 +4,7 @@ from logging import getLogger
 
 from domain.some_repository import SomeRepository
 
-from usecase.some_usecase import SomeUsecase
+from usecase.some_usecase import SomeUseCase
 
 # Behaviors that people can understand should be here.
 # Usecases can use a combination of multiple repositories.
@@ -16,7 +16,7 @@ logger = getLogger(__name__)
 logger.setLevel(os.getenv("LOG_LEVEL", "WARNING"))
 
 
-class SomeUsecaseImpl(SomeUsecase):
+class SomeUseCaseImpl(SomeUseCase):
     def __init__(self, repository) -> None:
         # Inject repository from outside of usecase to make this class testable.
         self.repository: SomeRepository = repository
