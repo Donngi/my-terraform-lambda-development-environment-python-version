@@ -31,9 +31,9 @@ data "archive_file" "sample" {
 
 resource "aws_lambda_function" "sample" {
   filename      = data.archive_file.sample.output_path
-  function_name = "SampleFunction"
+  function_name = "SampleFunctionPython"
   role          = aws_iam_role.lambda_sample.arn
-  handler       = "main.lambda_handler"
+  handler       = "presentation.handler.handle_request"
 
   source_code_hash = data.archive_file.sample.output_base64sha256
 

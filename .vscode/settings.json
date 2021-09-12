@@ -1,4 +1,5 @@
 {
+    "python.languageServer": "Pylance",
     "python.autoComplete.extraPaths": [
         "./terraform/module/lambda/src",
     ],
@@ -13,5 +14,5 @@
     "python.linting.mypyArgs": [],
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
-    },
+    }
 }
